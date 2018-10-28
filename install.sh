@@ -37,6 +37,8 @@ gem install colorls
 ln -s $HOME/.dotfiles/.mackup.cfg $HOME/.mackup.cfg
 ln -s $HOME/.dotfiles/.mackup $HOME/.mackup
 
+# restore apps settings
+mackup restore
 
 # Set macOS preferences
 # We will run this last because this will reload the shell
