@@ -2,7 +2,7 @@
 #
 # pre-installation:
 # - install Xcode
-# 
+#
 
 echo "Setting up your Mac..."
 
@@ -27,6 +27,9 @@ chsh -s $(which zsh)
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
 rm -rf $HOME/.zshrc
 ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
+
+# Install powerlevel9k theme
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 
 # Install ruby
 rbenv install 2.5.1
