@@ -65,6 +65,7 @@ plugins=(git rails bundler osx docker history-substring-search go zsh-completion
 source $ZSH/oh-my-zsh.sh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.secrets
+source ~/blueapron.zsh
 
 # You may need to manually set your language environment
 export LC_ALL=en_US.UTF-8
