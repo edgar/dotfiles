@@ -28,9 +28,10 @@ brew 'zpython'
 
 # Dev
 brew 'golang'
-brew 'rbenv' 
-brew 'ruby-build' 
+brew 'rbenv'
+brew 'ruby-build'
 brew 'rbenv-default-gems'
+brew 'python3'
 
 # Apps
 cask 'aerial'
@@ -67,7 +68,7 @@ cask 'font-source-serif-pro'
 # Mac App Store
 mas '1Password', id: 1333542190
 mas 'Giphy Capture', id: 668208984
-mas 'Keynote', id: 409183694 
+mas 'Keynote', id: 409183694
 mas 'Kindle', id: 405399194
 mas 'Microsoft OneNote', id: 784801555
 mas 'Numbers', id: 409203825
