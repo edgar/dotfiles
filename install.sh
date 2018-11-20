@@ -40,6 +40,12 @@ ln -s $HOME/.dotfiles/.mackup $HOME/.mackup
 # restore apps settings
 mackup restore
 
+# Install useful keybindings for fzf
+$(brew --prefix)/opt/fzf/install
+
+# Set default applications using duti
+./duti/setup.sh
+
 # Set macOS preferences
 # We will run this last because this will reload the shell
 source .macos

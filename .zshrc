@@ -96,3 +96,5 @@ export HISTIGNORE="cd:ls:[bf]g:clear:exit"
 eval "$(rbenv init - --no-rehash)"
 
 eval "$(direnv hook zsh)"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
