@@ -21,7 +21,7 @@ Based on [Drie's dotfiles](https://github.com/driesvints/dotfiles), these dotfil
 ## Installation
 
 ```
-$ git clone https://github.com/edgar/dotfiles.git ~/.dotfiles
+$ git clone --recursive https://github.com/edgar/dotfiles.git ~/.dotfiles
 $ cd ~/.dotfiles
 $ ./install.sh
 ```
