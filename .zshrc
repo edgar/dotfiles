@@ -12,7 +12,7 @@ module_path=($module_path /usr/local/lib/zpython)
 # time that oh-my-zsh is loaded.
 ZSH_THEME="powerlevel9k/powerlevel9k"
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir rbenv vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator disk_usage ram)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator aws kubecontext disk_usage ram)
 POWERLEVEL9K_MODE='nerdfont-complete'
 
 export TERM="xterm-256color"
@@ -53,18 +53,19 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
-ZSH_CUSTOM=$DOTFILES
+ZSH_CUSTOM=$DOTFILES/zsh_custom
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git rails bundler osx docker docker-compose history-substring-search go zsh-completions)
+plugins=(git rails bundler osx docker history-substring-search go zsh-completions aws kubectl)
 
 # Activate Oh-My-Zsh
 source $ZSH/oh-my-zsh.sh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.secrets
+source ~/blueapron.zsh
 
 # You may need to manually set your language environment
 export LC_ALL=en_US.UTF-8
@@ -95,3 +96,5 @@ export HISTIGNORE="cd:ls:[bf]g:clear:exit"
 eval "$(rbenv init - --no-rehash)"
 
 eval "$(direnv hook zsh)"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
