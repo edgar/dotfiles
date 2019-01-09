@@ -59,7 +59,7 @@ ZSH_CUSTOM=$DOTFILES/zsh_custom
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git rails bundler osx docker history-substring-search go zsh-completions aws kubectl)
+plugins=(git rails bundler osx docker docker-compose history-substring-search go zsh-completions aws kubectl)
 
 # Activate Oh-My-Zsh
 source $ZSH/oh-my-zsh.sh
