@@ -10,4 +10,4 @@ alias docker-rm-stopped='docker ps -aq --no-trunc -f status=exited | xargs docke
 alias gitclean='git clean -fxfd'
 alias lc='colorls -lA --sd'
 alias ping='prettyping --nolegend'
-
+alias brewpub='brew -v update && brew upgrade && brew cleanup && rm -rf "$(brew --cache)"'
