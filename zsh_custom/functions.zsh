@@ -20,3 +20,7 @@ function set-aws-keys() {
 #  export KOPS_STATE_STORE="s3://foo-kops-state-$1"
 #  kops export kubecfg --name aws-01.k8s.$1.foo-domain.com
 #}
+
+# function ssh-prod(){
+#   ssh -o ProxyCommand='ssh -W %h:%p $USER@bastion.foo.com' edgar@"$1"
+# }
