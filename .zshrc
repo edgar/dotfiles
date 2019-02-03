@@ -61,10 +61,12 @@ ZSH_CUSTOM=$DOTFILES/zsh_custom
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git rails bundler osx docker docker-compose history-substring-search go zsh-completions)
 
+# Secrets
+source ~/.secrets
+
 # Activate Oh-My-Zsh
 source $ZSH/oh-my-zsh.sh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source ~/.secrets
 
 # You may need to manually set your language environment
 export LC_ALL=en_US.UTF-8
@@ -97,3 +99,8 @@ eval "$(rbenv init - --no-rehash)"
 eval "$(direnv hook zsh)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# NVM
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

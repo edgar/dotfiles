@@ -36,6 +36,9 @@ rbenv install 2.5.1
 rbenv global 2.5.1
 gem install colorls
 
+# Install NVM
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
+
 # Symlink the Mackup config file to the home directory
 ln -s $HOME/.dotfiles/.mackup.cfg $HOME/.mackup.cfg
 ln -s $HOME/.dotfiles/.mackup $HOME/.mackup
