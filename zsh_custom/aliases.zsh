@@ -7,7 +7,7 @@ alias reset_tty="stty icrnl"
 alias docker-exited='docker ps -aq -f status=exited'
 alias docker-rm-stopped='docker ps -aq --no-trunc -f status=exited | xargs docker rm'
 alias gitclean='git clean -fxfd'
-alias lc='colorls -lA --sd'
 alias ping='prettyping --nolegend'
 alias brewpub='brew -v update && brew upgrade && brew cleanup && rm -rf "$(brew --cache)"'
+alias preview="fzf --preview 'bat --color \"always\" {}'"
 alias kube-error-pods='kubectl get pod --all-namespaces|grep -v "Running" |grep -v "Completed"'
