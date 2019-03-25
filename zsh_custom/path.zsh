@@ -5,3 +5,6 @@ export GOROOT=/usr/local/opt/go/libexec
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$GOROOT/bin
 
+# StreetEasy dockerbox
+export OKTA_TEAM=dev
+source $HOME/.dev_environment/bash_functions
