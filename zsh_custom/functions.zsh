@@ -24,3 +24,8 @@
 # function ssh-prod(){
 #   ssh -o ProxyCommand='ssh -W %h:%p $USER@bastion.foo.com' edgar@"$1"
 # }
+
+function iterm2_print_user_vars() {
+  iterm2_set_user_var gitBranch $((git branch 2> /dev/null) | grep \* | cut -c3-)
+  iterm2_set_user_var rubyVersion $(ruby -v | awk '{ print $2 }')
+}

@@ -11,3 +11,4 @@ alias ping='prettyping --nolegend'
 alias brewpub='brew -v update && brew upgrade && brew cleanup && rm -rf "$(brew --cache)"'
 alias preview="fzf --preview 'bat --color \"always\" {}'"
 alias kube-error-pods='kubectl get pod --all-namespaces|grep -v "Running" |grep -v "Completed"'
+alias docker-rm-dangling-images='docker rmi $(docker images -f "dangling=true" -q)'
