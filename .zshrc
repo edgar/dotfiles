@@ -12,8 +12,8 @@ module_path=($module_path /usr/local/lib/zpython)
 # time that oh-my-zsh is loaded.
 ZSH_THEME="powerlevel9k/powerlevel9k"
 POWERLEVEL9K_USE_CACHE=true
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir rbenv vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status disk_usage ram)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status disk_usage)
 POWERLEVEL9K_MODE='nerdfont-complete'
 
 export TERM="xterm-256color"
@@ -60,7 +60,7 @@ ZSH_CUSTOM=$DOTFILES/zsh_custom
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git rails bundler osx docker docker-compose history-substring-search go zsh-completions kubectl)
+plugins=(git bundler osx docker docker-compose history-substring-search zsh-completions kubectl)
 
 # Secrets
 source ~/.secrets
