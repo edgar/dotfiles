@@ -60,7 +60,7 @@ ZSH_CUSTOM=$DOTFILES/zsh_custom
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git bundler vsc osx docker docker-compose history-substring-search zsh-completions kubectl)
+plugins=(git bundler vscode osx docker docker-compose history-substring-search zsh-completions kubectl)
 
 # Secrets
 source ~/.secrets
