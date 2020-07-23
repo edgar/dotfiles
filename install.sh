@@ -30,11 +30,11 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
 rm -rf $HOME/.zshrc
 ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
+ln -s $HOME/.dotfiles/.p10k.zsh $HOME/.p10k.zsh
 
 # Install ruby
-rbenv install 2.5.1
-rbenv global 2.5.1
-gem install colorls
+rbenv install 2.6
+rbenv global 2.6
 
 # Install NVM
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
