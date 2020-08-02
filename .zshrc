@@ -93,11 +93,6 @@ export LANG=en_US.UTF-8
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
-# replace with ag
-function replace(){
-  ag -l "$1" | xargs sed -i '' -e "s/$1/$2/g"
-}
-
 # History
 export HISTCONTROL=ignoredups
 export HISTIGNORE="cd:ls:[bf]g:clear:exit"

@@ -29,3 +29,8 @@ function iterm2_print_user_vars() {
   iterm2_set_user_var gitBranch $((git branch 2> /dev/null) | grep \* | cut -c3-)
   iterm2_set_user_var rubyVersion $(ruby -v | awk '{ print $2 }')
 }
+
+# replace with ag
+function replace(){
+  ag -l "$1" | xargs sed -i '' -e "s/$1/$2/g"
+}
