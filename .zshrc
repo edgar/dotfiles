@@ -72,6 +72,9 @@ plugins=(git bundler vscode osx docker docker-compose history-substring-search z
 # Secrets
 source ~/.secrets
 
+# Zillow config
+source ~/.zillow/zillow.zsh
+
 # Activate Oh-My-Zsh
 source $ZSH/oh-my-zsh.sh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
