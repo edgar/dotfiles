@@ -36,6 +36,9 @@ ln -s $HOME/.dotfiles/.p10k.zsh $HOME/.p10k.zsh
 rbenv install 2.6
 rbenv global 2.6
 
+# Install Rust
+rustup-init -y
+
 # Install NVM
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
 

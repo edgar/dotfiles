@@ -41,6 +41,7 @@ brew 'rbenv'
 brew 'ruby-build'
 brew 'rbenv-default-gems'
 brew 'python3'
+brew 'rustup'
 
 # Apps
 cask 'aerial'
