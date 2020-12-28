@@ -33,8 +33,8 @@ ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
 ln -s $HOME/.dotfiles/.p10k.zsh $HOME/.p10k.zsh
 
 # Install ruby
-rbenv install 2.6
-rbenv global 2.6
+rbenv install 2.7
+rbenv global 2.7
 
 # Install Rust
 rustup-init -y
