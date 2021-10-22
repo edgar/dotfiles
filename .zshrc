@@ -72,9 +72,6 @@ plugins=(git bundler vscode osx docker docker-compose history-substring-search z
 # Secrets
 source ~/.secrets
 
-# Zillow config
-source ~/.zillow/zillow.zsh
-
 # Activate Oh-My-Zsh
 source $ZSH/oh-my-zsh.sh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -116,6 +113,14 @@ eval "$(direnv hook zsh)"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Zillow config
+if [[ `hostname` == ZG* ]]; then
+  source ~/.zillow/zillow.zsh
+  # StreetEasy dockerbox
+  export OKTA_TEAM=dev
+  source $HOME/.dev_environment/bash_functions
+fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
