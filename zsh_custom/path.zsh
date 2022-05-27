@@ -1,4 +1,5 @@
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="/opt/homebrew/bin:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
 export GOPATH=$HOME/sandboxes/go
 export GOROOT=/usr/local/opt/go/libexec
