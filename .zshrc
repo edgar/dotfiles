@@ -67,17 +67,15 @@ ZSH_CUSTOM=$DOTFILES/zsh_custom
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git bundler vscode osx docker docker-compose history-substring-search zsh-completions kubectl)
-
-# Secrets
-source ~/.secrets
+plugins=(git bundler vscode macos docker docker-compose history-substring-search zsh-completions kubectl)
+autoload -U compinit && compinit
 
 # Zillow config
 source ~/.zillow/zillow.zsh
 
 # Activate Oh-My-Zsh
+fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 source $ZSH/oh-my-zsh.sh
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # You may need to manually set your language environment
 export LC_ALL=en_US.UTF-8
